@@ -21,6 +21,15 @@
 		1327B09F27A5634F00C28CE8 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B09E27A5634F00C28CE8 /* Storyboarded.swift */; };
 		1327B0A227A5652600C28CE8 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0A127A5652600C28CE8 /* Media.swift */; };
 		1327B0A427A5684200C28CE8 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0A327A5684200C28CE8 /* ImageViewController.swift */; };
+		1327B0A727A5690000C28CE8 /* ImageDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0A627A5690000C28CE8 /* ImageDetailViewModel.swift */; };
+		1327B0B527A57AC500C28CE8 /* ResponseLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0AB27A57AC500C28CE8 /* ResponseLog.swift */; };
+		1327B0B627A57AC500C28CE8 /* URLRequestLoggableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0AC27A57AC500C28CE8 /* URLRequestLoggableProtocol.swift */; };
+		1327B0B727A57AC500C28CE8 /* RequestManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0AE27A57AC500C28CE8 /* RequestManagerProtocol.swift */; };
+		1327B0B827A57AC500C28CE8 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0AF27A57AC500C28CE8 /* RequestManager.swift */; };
+		1327B0B927A57AC500C28CE8 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0B027A57AC500C28CE8 /* RequestError.swift */; };
+		1327B0BA27A57AC500C28CE8 /* ResponseValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0B227A57AC500C28CE8 /* ResponseValidatorProtocol.swift */; };
+		1327B0BB27A57AC500C28CE8 /* ResponseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0B327A57AC500C28CE8 /* ResponseValidator.swift */; };
+		1327B0BC27A57AC500C28CE8 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0B427A57AC500C28CE8 /* HTTPMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +67,15 @@
 		1327B09E27A5634F00C28CE8 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		1327B0A127A5652600C28CE8 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		1327B0A327A5684200C28CE8 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		1327B0A627A5690000C28CE8 /* ImageDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewModel.swift; sourceTree = "<group>"; };
+		1327B0AB27A57AC500C28CE8 /* ResponseLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseLog.swift; sourceTree = "<group>"; };
+		1327B0AC27A57AC500C28CE8 /* URLRequestLoggableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestLoggableProtocol.swift; sourceTree = "<group>"; };
+		1327B0AE27A57AC500C28CE8 /* RequestManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManagerProtocol.swift; sourceTree = "<group>"; };
+		1327B0AF27A57AC500C28CE8 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		1327B0B027A57AC500C28CE8 /* RequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		1327B0B227A57AC500C28CE8 /* ResponseValidatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseValidatorProtocol.swift; sourceTree = "<group>"; };
+		1327B0B327A57AC500C28CE8 /* ResponseValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseValidator.swift; sourceTree = "<group>"; };
+		1327B0B427A57AC500C28CE8 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +126,7 @@
 		1327B06527A5227200C28CE8 /* Killiaro-Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				1327B0A827A57A9100C28CE8 /* Utilities */,
 				1327B0A027A5651500C28CE8 /* Model */,
 				1327B09C27A5632800C28CE8 /* Helpers */,
 				1327B09427A5614C00C28CE8 /* App */,
@@ -166,6 +185,7 @@
 		1327B09927A562A500C28CE8 /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
+				1327B0A527A568E100C28CE8 /* ViewModel */,
 				1327B09A27A562DE00C28CE8 /* GalleryViewController.swift */,
 				1327B0A327A5684200C28CE8 /* ImageViewController.swift */,
 			);
@@ -194,6 +214,61 @@
 				1327B0A127A5652600C28CE8 /* Media.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1327B0A527A568E100C28CE8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1327B0A627A5690000C28CE8 /* ImageDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1327B0A827A57A9100C28CE8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1327B0A927A57AA200C28CE8 /* Network */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1327B0A927A57AA200C28CE8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1327B0AA27A57AC500C28CE8 /* APILogger */,
+				1327B0B427A57AC500C28CE8 /* HTTPMethod.swift */,
+				1327B0AD27A57AC500C28CE8 /* Protocols */,
+				1327B0B027A57AC500C28CE8 /* RequestError.swift */,
+				1327B0AF27A57AC500C28CE8 /* RequestManager.swift */,
+				1327B0B127A57AC500C28CE8 /* ResponseValidator */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1327B0AA27A57AC500C28CE8 /* APILogger */ = {
+			isa = PBXGroup;
+			children = (
+				1327B0AB27A57AC500C28CE8 /* ResponseLog.swift */,
+				1327B0AC27A57AC500C28CE8 /* URLRequestLoggableProtocol.swift */,
+			);
+			path = APILogger;
+			sourceTree = "<group>";
+		};
+		1327B0AD27A57AC500C28CE8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1327B0AE27A57AC500C28CE8 /* RequestManagerProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1327B0B127A57AC500C28CE8 /* ResponseValidator */ = {
+			isa = PBXGroup;
+			children = (
+				1327B0B227A57AC500C28CE8 /* ResponseValidatorProtocol.swift */,
+				1327B0B327A57AC500C28CE8 /* ResponseValidator.swift */,
+			);
+			path = ResponseValidator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,13 +401,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1327B0B727A57AC500C28CE8 /* RequestManagerProtocol.swift in Sources */,
+				1327B0BA27A57AC500C28CE8 /* ResponseValidatorProtocol.swift in Sources */,
 				1327B09627A5615C00C28CE8 /* AppDelegate.swift in Sources */,
 				1327B0A427A5684200C28CE8 /* ImageViewController.swift in Sources */,
 				1327B09327A53ADF00C28CE8 /* Killiaro.xcdatamodeld in Sources */,
 				1327B09827A5627D00C28CE8 /* AppCoordinator.swift in Sources */,
+				1327B0B527A57AC500C28CE8 /* ResponseLog.swift in Sources */,
+				1327B0BB27A57AC500C28CE8 /* ResponseValidator.swift in Sources */,
 				1327B09B27A562DE00C28CE8 /* GalleryViewController.swift in Sources */,
+				1327B0A727A5690000C28CE8 /* ImageDetailViewModel.swift in Sources */,
 				1327B06927A5227200C28CE8 /* ContentView.swift in Sources */,
+				1327B0B627A57AC500C28CE8 /* URLRequestLoggableProtocol.swift in Sources */,
 				1327B06727A5227200C28CE8 /* Killiaro_AssignmentApp.swift in Sources */,
+				1327B0B927A57AC500C28CE8 /* RequestError.swift in Sources */,
+				1327B0BC27A57AC500C28CE8 /* HTTPMethod.swift in Sources */,
+				1327B0B827A57AC500C28CE8 /* RequestManager.swift in Sources */,
 				1327B0A227A5652600C28CE8 /* Media.swift in Sources */,
 				1327B09F27A5634F00C28CE8 /* Storyboarded.swift in Sources */,
 			);

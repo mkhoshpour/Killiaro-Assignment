@@ -11,6 +11,8 @@ class ImageViewController: UIViewController, Storyboarded {
 
 
     weak var coordinator: AppCoordinator?
+    let imageViewModel = ImageDetailViewModel()
+
 
 
     override func viewDidLoad() {
