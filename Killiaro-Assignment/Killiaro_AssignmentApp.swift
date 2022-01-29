@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@main
+
 struct Killiaro_AssignmentApp: App {
     var body: some Scene {
         WindowGroup {

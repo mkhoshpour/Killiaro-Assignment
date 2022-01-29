@@ -14,6 +14,13 @@
 		1327B07827A5227400C28CE8 /* Killiaro_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B07727A5227400C28CE8 /* Killiaro_AssignmentTests.swift */; };
 		1327B08227A5227400C28CE8 /* Killiaro_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B08127A5227400C28CE8 /* Killiaro_AssignmentUITests.swift */; };
 		1327B08427A5227400C28CE8 /* Killiaro_AssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B08327A5227400C28CE8 /* Killiaro_AssignmentUITestsLaunchTests.swift */; };
+		1327B09327A53ADF00C28CE8 /* Killiaro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1327B09127A53ADF00C28CE8 /* Killiaro.xcdatamodeld */; };
+		1327B09627A5615C00C28CE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B09527A5615C00C28CE8 /* AppDelegate.swift */; };
+		1327B09827A5627D00C28CE8 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B09727A5627D00C28CE8 /* AppCoordinator.swift */; };
+		1327B09B27A562DE00C28CE8 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B09A27A562DE00C28CE8 /* GalleryViewController.swift */; };
+		1327B09F27A5634F00C28CE8 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B09E27A5634F00C28CE8 /* Storyboarded.swift */; };
+		1327B0A227A5652600C28CE8 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0A127A5652600C28CE8 /* Media.swift */; };
+		1327B0A427A5684200C28CE8 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0A327A5684200C28CE8 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		1327B07D27A5227400C28CE8 /* Killiaro-AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Killiaro-AssignmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1327B08127A5227400C28CE8 /* Killiaro_AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Killiaro_AssignmentUITests.swift; sourceTree = "<group>"; };
 		1327B08327A5227400C28CE8 /* Killiaro_AssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Killiaro_AssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1327B09227A53ADF00C28CE8 /* Killiaro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Killiaro.xcdatamodel; sourceTree = "<group>"; };
+		1327B09527A5615C00C28CE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1327B09727A5627D00C28CE8 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		1327B09A27A562DE00C28CE8 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		1327B09E27A5634F00C28CE8 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		1327B0A127A5652600C28CE8 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		1327B0A327A5684200C28CE8 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +108,11 @@
 		1327B06527A5227200C28CE8 /* Killiaro-Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				1327B0A027A5651500C28CE8 /* Model */,
+				1327B09C27A5632800C28CE8 /* Helpers */,
+				1327B09427A5614C00C28CE8 /* App */,
 				1327B09027A53AA500C28CE8 /* Supporting Files */,
+				1327B09927A562A500C28CE8 /* Gallery */,
 				1327B06627A5227200C28CE8 /* Killiaro_AssignmentApp.swift */,
 				1327B06827A5227200C28CE8 /* ContentView.swift */,
 				1327B06A27A5227300C28CE8 /* Assets.xcassets */,
@@ -131,8 +149,51 @@
 		1327B09027A53AA500C28CE8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1327B09127A53ADF00C28CE8 /* Killiaro.xcdatamodeld */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1327B09427A5614C00C28CE8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1327B09527A5615C00C28CE8 /* AppDelegate.swift */,
+				1327B09727A5627D00C28CE8 /* AppCoordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1327B09927A562A500C28CE8 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				1327B09A27A562DE00C28CE8 /* GalleryViewController.swift */,
+				1327B0A327A5684200C28CE8 /* ImageViewController.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		1327B09C27A5632800C28CE8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1327B09D27A5633200C28CE8 /* Coordinators */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1327B09D27A5633200C28CE8 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				1327B09E27A5634F00C28CE8 /* Storyboarded.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		1327B0A027A5651500C28CE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1327B0A127A5652600C28CE8 /* Media.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +326,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1327B09627A5615C00C28CE8 /* AppDelegate.swift in Sources */,
+				1327B0A427A5684200C28CE8 /* ImageViewController.swift in Sources */,
+				1327B09327A53ADF00C28CE8 /* Killiaro.xcdatamodeld in Sources */,
+				1327B09827A5627D00C28CE8 /* AppCoordinator.swift in Sources */,
+				1327B09B27A562DE00C28CE8 /* GalleryViewController.swift in Sources */,
 				1327B06927A5227200C28CE8 /* ContentView.swift in Sources */,
 				1327B06727A5227200C28CE8 /* Killiaro_AssignmentApp.swift in Sources */,
+				1327B0A227A5652600C28CE8 /* Media.swift in Sources */,
+				1327B09F27A5634F00C28CE8 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +685,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1327B09127A53ADF00C28CE8 /* Killiaro.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1327B09227A53ADF00C28CE8 /* Killiaro.xcdatamodel */,
+			);
+			currentVersion = 1327B09227A53ADF00C28CE8 /* Killiaro.xcdatamodel */;
+			path = Killiaro.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1327B05B27A5227200C28CE8 /* Project object */;
 }
