@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1327B06727A5227200C28CE8 /* Killiaro_AssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B06627A5227200C28CE8 /* Killiaro_AssignmentApp.swift */; };
+		1327B06927A5227200C28CE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B06827A5227200C28CE8 /* ContentView.swift */; };
+		1327B06B27A5227300C28CE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1327B06A27A5227300C28CE8 /* Assets.xcassets */; };
+		1327B06E27A5227300C28CE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1327B06D27A5227300C28CE8 /* Preview Assets.xcassets */; };
+		1327B07827A5227400C28CE8 /* Killiaro_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B07727A5227400C28CE8 /* Killiaro_AssignmentTests.swift */; };
+		1327B08227A5227400C28CE8 /* Killiaro_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B08127A5227400C28CE8 /* Killiaro_AssignmentUITests.swift */; };
+		1327B08427A5227400C28CE8 /* Killiaro_AssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B08327A5227400C28CE8 /* Killiaro_AssignmentUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1327B07427A5227400C28CE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1327B05B27A5227200C28CE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1327B06227A5227200C28CE8;
+			remoteInfo = "Killiaro-Assignment";
+		};
+		1327B07E27A5227400C28CE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1327B05B27A5227200C28CE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1327B06227A5227200C28CE8;
+			remoteInfo = "Killiaro-Assignment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1327B06327A5227200C28CE8 /* Killiaro-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Killiaro-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1327B06627A5227200C28CE8 /* Killiaro_AssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Killiaro_AssignmentApp.swift; sourceTree = "<group>"; };
+		1327B06827A5227200C28CE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1327B06A27A5227300C28CE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1327B06D27A5227300C28CE8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1327B07327A5227400C28CE8 /* Killiaro-AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Killiaro-AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1327B07727A5227400C28CE8 /* Killiaro_AssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Killiaro_AssignmentTests.swift; sourceTree = "<group>"; };
+		1327B07D27A5227400C28CE8 /* Killiaro-AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Killiaro-AssignmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1327B08127A5227400C28CE8 /* Killiaro_AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Killiaro_AssignmentUITests.swift; sourceTree = "<group>"; };
+		1327B08327A5227400C28CE8 /* Killiaro_AssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Killiaro_AssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1327B06027A5227200C28CE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1327B07027A5227400C28CE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1327B07A27A5227400C28CE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1327B05A27A5227200C28CE8 = {
+			isa = PBXGroup;
+			children = (
+				1327B06527A5227200C28CE8 /* Killiaro-Assignment */,
+				1327B07627A5227400C28CE8 /* Killiaro-AssignmentTests */,
+				1327B08027A5227400C28CE8 /* Killiaro-AssignmentUITests */,
+				1327B06427A5227200C28CE8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1327B06427A5227200C28CE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1327B06327A5227200C28CE8 /* Killiaro-Assignment.app */,
+				1327B07327A5227400C28CE8 /* Killiaro-AssignmentTests.xctest */,
+				1327B07D27A5227400C28CE8 /* Killiaro-AssignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1327B06527A5227200C28CE8 /* Killiaro-Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				1327B06627A5227200C28CE8 /* Killiaro_AssignmentApp.swift */,
+				1327B06827A5227200C28CE8 /* ContentView.swift */,
+				1327B06A27A5227300C28CE8 /* Assets.xcassets */,
+				1327B06C27A5227300C28CE8 /* Preview Content */,
+			);
+			path = "Killiaro-Assignment";
+			sourceTree = "<group>";
+		};
+		1327B06C27A5227300C28CE8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1327B06D27A5227300C28CE8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1327B07627A5227400C28CE8 /* Killiaro-AssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				1327B07727A5227400C28CE8 /* Killiaro_AssignmentTests.swift */,
+			);
+			path = "Killiaro-AssignmentTests";
+			sourceTree = "<group>";
+		};
+		1327B08027A5227400C28CE8 /* Killiaro-AssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1327B08127A5227400C28CE8 /* Killiaro_AssignmentUITests.swift */,
+				1327B08327A5227400C28CE8 /* Killiaro_AssignmentUITestsLaunchTests.swift */,
+			);
+			path = "Killiaro-AssignmentUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1327B06227A5227200C28CE8 /* Killiaro-Assignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1327B08727A5227400C28CE8 /* Build configuration list for PBXNativeTarget "Killiaro-Assignment" */;
+			buildPhases = (
+				1327B05F27A5227200C28CE8 /* Sources */,
+				1327B06027A5227200C28CE8 /* Frameworks */,
+				1327B06127A5227200C28CE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Killiaro-Assignment";
+			productName = "Killiaro-Assignment";
+			productReference = 1327B06327A5227200C28CE8 /* Killiaro-Assignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1327B07227A5227400C28CE8 /* Killiaro-AssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1327B08A27A5227400C28CE8 /* Build configuration list for PBXNativeTarget "Killiaro-AssignmentTests" */;
+			buildPhases = (
+				1327B06F27A5227400C28CE8 /* Sources */,
+				1327B07027A5227400C28CE8 /* Frameworks */,
+				1327B07127A5227400C28CE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1327B07527A5227400C28CE8 /* PBXTargetDependency */,
+			);
+			name = "Killiaro-AssignmentTests";
+			productName = "Killiaro-AssignmentTests";
+			productReference = 1327B07327A5227400C28CE8 /* Killiaro-AssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1327B07C27A5227400C28CE8 /* Killiaro-AssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1327B08D27A5227400C28CE8 /* Build configuration list for PBXNativeTarget "Killiaro-AssignmentUITests" */;
+			buildPhases = (
+				1327B07927A5227400C28CE8 /* Sources */,
+				1327B07A27A5227400C28CE8 /* Frameworks */,
+				1327B07B27A5227400C28CE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1327B07F27A5227400C28CE8 /* PBXTargetDependency */,
+			);
+			name = "Killiaro-AssignmentUITests";
+			productName = "Killiaro-AssignmentUITests";
+			productReference = 1327B07D27A5227400C28CE8 /* Killiaro-AssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1327B05B27A5227200C28CE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					1327B06227A5227200C28CE8 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					1327B07227A5227400C28CE8 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 1327B06227A5227200C28CE8;
+					};
+					1327B07C27A5227400C28CE8 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 1327B06227A5227200C28CE8;
+					};
+				};
+			};
+			buildConfigurationList = 1327B05E27A5227200C28CE8 /* Build configuration list for PBXProject "Killiaro-Assignment" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1327B05A27A5227200C28CE8;
+			productRefGroup = 1327B06427A5227200C28CE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1327B06227A5227200C28CE8 /* Killiaro-Assignment */,
+				1327B07227A5227400C28CE8 /* Killiaro-AssignmentTests */,
+				1327B07C27A5227400C28CE8 /* Killiaro-AssignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1327B06127A5227200C28CE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1327B06E27A5227300C28CE8 /* Preview Assets.xcassets in Resources */,
+				1327B06B27A5227300C28CE8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1327B07127A5227400C28CE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1327B07B27A5227400C28CE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1327B05F27A5227200C28CE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1327B06927A5227200C28CE8 /* ContentView.swift in Sources */,
+				1327B06727A5227200C28CE8 /* Killiaro_AssignmentApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1327B06F27A5227400C28CE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1327B07827A5227400C28CE8 /* Killiaro_AssignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1327B07927A5227400C28CE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1327B08427A5227400C28CE8 /* Killiaro_AssignmentUITestsLaunchTests.swift in Sources */,
+				1327B08227A5227400C28CE8 /* Killiaro_AssignmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1327B07527A5227400C28CE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1327B06227A5227200C28CE8 /* Killiaro-Assignment */;
+			targetProxy = 1327B07427A5227400C28CE8 /* PBXContainerItemProxy */;
+		};
+		1327B07F27A5227400C28CE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1327B06227A5227200C28CE8 /* Killiaro-Assignment */;
+			targetProxy = 1327B07E27A5227400C28CE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1327B08527A5227400C28CE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1327B08627A5227400C28CE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1327B08827A5227400C28CE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Killiaro-Assignment/Preview Content\"";
+				DEVELOPMENT_TEAM = 6HLE4997NC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.killiaro.assign.Killiaro-Assignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1327B08927A5227400C28CE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Killiaro-Assignment/Preview Content\"";
+				DEVELOPMENT_TEAM = 6HLE4997NC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.killiaro.assign.Killiaro-Assignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1327B08B27A5227400C28CE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6HLE4997NC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.killiaro.assign.Killiaro-AssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Killiaro-Assignment.app/Killiaro-Assignment";
+			};
+			name = Debug;
+		};
+		1327B08C27A5227400C28CE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6HLE4997NC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.killiaro.assign.Killiaro-AssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Killiaro-Assignment.app/Killiaro-Assignment";
+			};
+			name = Release;
+		};
+		1327B08E27A5227400C28CE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6HLE4997NC;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.killiaro.assign.Killiaro-AssignmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Killiaro-Assignment";
+			};
+			name = Debug;
+		};
+		1327B08F27A5227400C28CE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6HLE4997NC;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.killiaro.assign.Killiaro-AssignmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Killiaro-Assignment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1327B05E27A5227200C28CE8 /* Build configuration list for PBXProject "Killiaro-Assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1327B08527A5227400C28CE8 /* Debug */,
+				1327B08627A5227400C28CE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1327B08727A5227400C28CE8 /* Build configuration list for PBXNativeTarget "Killiaro-Assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1327B08827A5227400C28CE8 /* Debug */,
+				1327B08927A5227400C28CE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1327B08A27A5227400C28CE8 /* Build configuration list for PBXNativeTarget "Killiaro-AssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1327B08B27A5227400C28CE8 /* Debug */,
+				1327B08C27A5227400C28CE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1327B08D27A5227400C28CE8 /* Build configuration list for PBXNativeTarget "Killiaro-AssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1327B08E27A5227400C28CE8 /* Debug */,
+				1327B08F27A5227400C28CE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1327B05B27A5227200C28CE8 /* Project object */;
+}
