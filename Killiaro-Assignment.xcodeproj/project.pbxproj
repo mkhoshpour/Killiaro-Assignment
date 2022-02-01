@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1327B06727A5227200C28CE8 /* Killiaro_AssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B06627A5227200C28CE8 /* Killiaro_AssignmentApp.swift */; };
-		1327B06927A5227200C28CE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B06827A5227200C28CE8 /* ContentView.swift */; };
 		1327B06B27A5227300C28CE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1327B06A27A5227300C28CE8 /* Assets.xcassets */; };
-		1327B06E27A5227300C28CE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1327B06D27A5227300C28CE8 /* Preview Assets.xcassets */; };
 		1327B07827A5227400C28CE8 /* Killiaro_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B07727A5227400C28CE8 /* Killiaro_AssignmentTests.swift */; };
 		1327B08227A5227400C28CE8 /* Killiaro_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B08127A5227400C28CE8 /* Killiaro_AssignmentUITests.swift */; };
 		1327B08427A5227400C28CE8 /* Killiaro_AssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B08327A5227400C28CE8 /* Killiaro_AssignmentUITestsLaunchTests.swift */; };
@@ -30,6 +27,15 @@
 		1327B0BA27A57AC500C28CE8 /* ResponseValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0B227A57AC500C28CE8 /* ResponseValidatorProtocol.swift */; };
 		1327B0BB27A57AC500C28CE8 /* ResponseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0B327A57AC500C28CE8 /* ResponseValidator.swift */; };
 		1327B0BC27A57AC500C28CE8 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0B427A57AC500C28CE8 /* HTTPMethod.swift */; };
+		1327B0BE27A57BD500C28CE8 /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0BD27A57BD500C28CE8 /* GalleryViewModel.swift */; };
+		1327B0C127A57C2000C28CE8 /* MediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0C027A57C2000C28CE8 /* MediaService.swift */; };
+		1327B0C527A9831400C28CE8 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0C427A9831400C28CE8 /* Coordinator.swift */; };
+		1327B0CA27A996B000C28CE8 /* Gallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1327B0C927A996B000C28CE8 /* Gallery.storyboard */; };
+		1327B0CE27A99E1A00C28CE8 /* MediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0CC27A99E1A00C28CE8 /* MediaCell.swift */; };
+		1327B0CF27A99E1A00C28CE8 /* MediaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1327B0CD27A99E1A00C28CE8 /* MediaCell.xib */; };
+		1327B0D227A99F2000C28CE8 /* UICollectionView + Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0D127A99F2000C28CE8 /* UICollectionView + Cell.swift */; };
+		1327B0D527A9A0A400C28CE8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1327B0D427A9A0A400C28CE8 /* Kingfisher */; };
+		1327B0D727A9C44900C28CE8 /* UIImage + Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0D627A9C44900C28CE8 /* UIImage + Size.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,10 +57,7 @@
 
 /* Begin PBXFileReference section */
 		1327B06327A5227200C28CE8 /* Killiaro-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Killiaro-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1327B06627A5227200C28CE8 /* Killiaro_AssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Killiaro_AssignmentApp.swift; sourceTree = "<group>"; };
-		1327B06827A5227200C28CE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1327B06A27A5227300C28CE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1327B06D27A5227300C28CE8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1327B07327A5227400C28CE8 /* Killiaro-AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Killiaro-AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1327B07727A5227400C28CE8 /* Killiaro_AssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Killiaro_AssignmentTests.swift; sourceTree = "<group>"; };
 		1327B07D27A5227400C28CE8 /* Killiaro-AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Killiaro-AssignmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +79,14 @@
 		1327B0B227A57AC500C28CE8 /* ResponseValidatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseValidatorProtocol.swift; sourceTree = "<group>"; };
 		1327B0B327A57AC500C28CE8 /* ResponseValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseValidator.swift; sourceTree = "<group>"; };
 		1327B0B427A57AC500C28CE8 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		1327B0BD27A57BD500C28CE8 /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
+		1327B0C027A57C2000C28CE8 /* MediaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaService.swift; sourceTree = "<group>"; };
+		1327B0C427A9831400C28CE8 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		1327B0C927A996B000C28CE8 /* Gallery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gallery.storyboard; sourceTree = "<group>"; };
+		1327B0CC27A99E1A00C28CE8 /* MediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCell.swift; sourceTree = "<group>"; };
+		1327B0CD27A99E1A00C28CE8 /* MediaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaCell.xib; sourceTree = "<group>"; };
+		1327B0D127A99F2000C28CE8 /* UICollectionView + Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + Cell.swift"; sourceTree = "<group>"; };
+		1327B0D627A9C44900C28CE8 /* UIImage + Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Size.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1327B0D527A9A0A400C28CE8 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,20 +144,9 @@
 				1327B09427A5614C00C28CE8 /* App */,
 				1327B09027A53AA500C28CE8 /* Supporting Files */,
 				1327B09927A562A500C28CE8 /* Gallery */,
-				1327B06627A5227200C28CE8 /* Killiaro_AssignmentApp.swift */,
-				1327B06827A5227200C28CE8 /* ContentView.swift */,
 				1327B06A27A5227300C28CE8 /* Assets.xcassets */,
-				1327B06C27A5227300C28CE8 /* Preview Content */,
 			);
 			path = "Killiaro-Assignment";
-			sourceTree = "<group>";
-		};
-		1327B06C27A5227300C28CE8 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				1327B06D27A5227300C28CE8 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		1327B07627A5227400C28CE8 /* Killiaro-AssignmentTests */ = {
@@ -185,8 +186,9 @@
 		1327B09927A562A500C28CE8 /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
+				1327B0C627A9948400C28CE8 /* View */,
+				1327B0BF27A57C1000C28CE8 /* Service */,
 				1327B0A527A568E100C28CE8 /* ViewModel */,
-				1327B09A27A562DE00C28CE8 /* GalleryViewController.swift */,
 				1327B0A327A5684200C28CE8 /* ImageViewController.swift */,
 			);
 			path = Gallery;
@@ -220,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				1327B0A627A5690000C28CE8 /* ImageDetailViewModel.swift */,
+				1327B0BD27A57BD500C28CE8 /* GalleryViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 		1327B0A827A57A9100C28CE8 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				1327B0C227A982E400C28CE8 /* Extentions */,
 				1327B0A927A57AA200C28CE8 /* Network */,
 			);
 			path = Utilities;
@@ -271,6 +275,59 @@
 			path = ResponseValidator;
 			sourceTree = "<group>";
 		};
+		1327B0BF27A57C1000C28CE8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1327B0C027A57C2000C28CE8 /* MediaService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1327B0C227A982E400C28CE8 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				1327B0D027A99F1000C28CE8 /* UI */,
+				1327B0C327A982F400C28CE8 /* Coordinator */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		1327B0C327A982F400C28CE8 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				1327B0C427A9831400C28CE8 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		1327B0C627A9948400C28CE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1327B0CB27A99DFE00C28CE8 /* Cell */,
+				1327B09A27A562DE00C28CE8 /* GalleryViewController.swift */,
+				1327B0C927A996B000C28CE8 /* Gallery.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1327B0CB27A99DFE00C28CE8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1327B0CC27A99E1A00C28CE8 /* MediaCell.swift */,
+				1327B0CD27A99E1A00C28CE8 /* MediaCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1327B0D027A99F1000C28CE8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1327B0D127A99F2000C28CE8 /* UICollectionView + Cell.swift */,
+				1327B0D627A9C44900C28CE8 /* UIImage + Size.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -287,6 +344,9 @@
 			dependencies = (
 			);
 			name = "Killiaro-Assignment";
+			packageProductDependencies = (
+				1327B0D427A9A0A400C28CE8 /* Kingfisher */,
+			);
 			productName = "Killiaro-Assignment";
 			productReference = 1327B06327A5227200C28CE8 /* Killiaro-Assignment.app */;
 			productType = "com.apple.product-type.application";
@@ -359,6 +419,9 @@
 				Base,
 			);
 			mainGroup = 1327B05A27A5227200C28CE8;
+			packageReferences = (
+				1327B0D327A9A0A400C28CE8 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 1327B06427A5227200C28CE8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -375,8 +438,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1327B06E27A5227300C28CE8 /* Preview Assets.xcassets in Resources */,
 				1327B06B27A5227300C28CE8 /* Assets.xcassets in Resources */,
+				1327B0CA27A996B000C28CE8 /* Gallery.storyboard in Resources */,
+				1327B0CF27A99E1A00C28CE8 /* MediaCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,23 +466,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				1327B0B727A57AC500C28CE8 /* RequestManagerProtocol.swift in Sources */,
+				1327B0D727A9C44900C28CE8 /* UIImage + Size.swift in Sources */,
 				1327B0BA27A57AC500C28CE8 /* ResponseValidatorProtocol.swift in Sources */,
+				1327B0CE27A99E1A00C28CE8 /* MediaCell.swift in Sources */,
 				1327B09627A5615C00C28CE8 /* AppDelegate.swift in Sources */,
 				1327B0A427A5684200C28CE8 /* ImageViewController.swift in Sources */,
 				1327B09327A53ADF00C28CE8 /* Killiaro.xcdatamodeld in Sources */,
 				1327B09827A5627D00C28CE8 /* AppCoordinator.swift in Sources */,
+				1327B0C127A57C2000C28CE8 /* MediaService.swift in Sources */,
 				1327B0B527A57AC500C28CE8 /* ResponseLog.swift in Sources */,
 				1327B0BB27A57AC500C28CE8 /* ResponseValidator.swift in Sources */,
 				1327B09B27A562DE00C28CE8 /* GalleryViewController.swift in Sources */,
 				1327B0A727A5690000C28CE8 /* ImageDetailViewModel.swift in Sources */,
-				1327B06927A5227200C28CE8 /* ContentView.swift in Sources */,
+				1327B0BE27A57BD500C28CE8 /* GalleryViewModel.swift in Sources */,
 				1327B0B627A57AC500C28CE8 /* URLRequestLoggableProtocol.swift in Sources */,
-				1327B06727A5227200C28CE8 /* Killiaro_AssignmentApp.swift in Sources */,
 				1327B0B927A57AC500C28CE8 /* RequestError.swift in Sources */,
 				1327B0BC27A57AC500C28CE8 /* HTTPMethod.swift in Sources */,
 				1327B0B827A57AC500C28CE8 /* RequestManager.swift in Sources */,
+				1327B0D227A99F2000C28CE8 /* UICollectionView + Cell.swift in Sources */,
 				1327B0A227A5652600C28CE8 /* Media.swift in Sources */,
 				1327B09F27A5634F00C28CE8 /* Storyboarded.swift in Sources */,
+				1327B0C527A9831400C28CE8 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,17 +646,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Killiaro-Assignment/Preview Content\"";
 				DEVELOPMENT_TEAM = 6HLE4997NC;
-				ENABLE_PREVIEWS = YES;
+				ENABLE_PREVIEWS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -609,17 +677,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Killiaro-Assignment/Preview Content\"";
 				DEVELOPMENT_TEAM = 6HLE4997NC;
-				ENABLE_PREVIEWS = YES;
+				ENABLE_PREVIEWS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -769,6 +837,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1327B0D327A9A0A400C28CE8 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1327B0D427A9A0A400C28CE8 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1327B0D327A9A0A400C28CE8 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		1327B09127A53ADF00C28CE8 /* Killiaro.xcdatamodeld */ = {

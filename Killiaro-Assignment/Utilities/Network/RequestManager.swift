@@ -15,9 +15,12 @@ import Foundation
 
 typealias CodableResponse<T: Codable> = (Result<T, RequestError>) -> Void
 
+var apiKey: String = "djlCbGusTJamg_ca4axEVw"
+
 final class RequestManager: NSObject, URLSessionDelegate {
-    
-    var baseApi: String = "https://s3-eu-west-1.amazonaws.com/product.versioning.com/"
+
+
+    var baseApi: String = "https://api1.kiliaro.com/shared/" + apiKey
     
     var session: URLSession!
     

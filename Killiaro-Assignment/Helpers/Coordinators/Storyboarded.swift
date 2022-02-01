@@ -48,7 +48,7 @@ extension Storyboarded where Self: UIViewController {
 extension Storyboarded where Self: UIViewController {
 
     static func instantiate(coordinator: ConcreteCoordinator?) -> Self {
-        var viewController = instantiateWithXib()
+        var viewController = instantiateWithStoryboard()
         viewController.coordinator = coordinator
         return viewController
     }
