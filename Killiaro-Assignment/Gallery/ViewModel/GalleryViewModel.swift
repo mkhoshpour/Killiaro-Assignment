@@ -75,7 +75,7 @@ class GalleryViewModel {
     }
 
     func downloadThumbnail(item: MediaModel, size: CGSize, indexPath: IndexPath, completion: @escaping ImageResult) {
-        if let thumbnail = item.thumbnail_url, var url = URL(string: thumbnail), let fileName = item.filename {
+        if let thumbnail = item.thumbnail_url, var url = URL(string: thumbnail) {
             let queryParams = "?w=" + String(Int(size.width)) + "&h=" + String(Int(size.height)) + "&m=md"
             url = url.appendingPathExtension(queryParams)
             MediaService.loadImage(url: url, indexPath: indexPath) { [completion] result, fileName  in

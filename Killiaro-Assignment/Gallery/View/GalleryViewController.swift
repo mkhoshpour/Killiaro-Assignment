@@ -53,19 +53,19 @@ class GalleryViewController: UIViewController, Storyboarded {
 
         }
 
-        // Subscribe to apartments
+        // Subscribe to medias
         galleryViewModel.medias = { [weak self] medias in
             guard let self = self else { return }
             // Add new apartments to tableView dataSource.
             self.medias = medias
             self.collectionView.reloadData()
-//            self.apartmentsTableViewDataSource.refreshWithNewItems(apartments)
+
         }
 
         // Subscribe to errors
-        galleryViewModel.errorHandler = { [weak self] _ in
+        galleryViewModel.errorHandler = { [weak self] error in
             guard let self = self else { return }
-//            self.showAlertWith(error, title: "Error", completion: nil)
+            self.showAlertWith(error, title: "Error", completion: nil)
         }
     }
 

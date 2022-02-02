@@ -38,6 +38,7 @@
 		1327B0DC27A9C83A00C28CE8 /* ImagePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0DA27A9C83A00C28CE8 /* ImagePlayerViewController.swift */; };
 		1327B0DF27A9C85F00C28CE8 /* ImagePlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1327B0DE27A9C85F00C28CE8 /* ImagePlayer.storyboard */; };
 		1327B0E227AA4D6000C28CE8 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0E127AA4D6000C28CE8 /* DataBaseManager.swift */; };
+		1327B0E627AA670700C28CE8 /* UIViewController + Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B0E527AA670700C28CE8 /* UIViewController + Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		1327B0DA27A9C83A00C28CE8 /* ImagePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePlayerViewController.swift; sourceTree = "<group>"; };
 		1327B0DE27A9C85F00C28CE8 /* ImagePlayer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImagePlayer.storyboard; sourceTree = "<group>"; };
 		1327B0E127AA4D6000C28CE8 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		1327B0E527AA670700C28CE8 /* UIViewController + Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Alert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -328,6 +330,7 @@
 			children = (
 				1327B0D127A99F2000C28CE8 /* UICollectionView + Cell.swift */,
 				1327B0D627A9C44900C28CE8 /* UIImage + Size.swift */,
+				1327B0E527AA670700C28CE8 /* UIViewController + Alert.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -526,6 +529,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1327B0B727A57AC500C28CE8 /* RequestManagerProtocol.swift in Sources */,
+				1327B0E627AA670700C28CE8 /* UIViewController + Alert.swift in Sources */,
 				1327B0D727A9C44900C28CE8 /* UIImage + Size.swift in Sources */,
 				1327B0BA27A57AC500C28CE8 /* ResponseValidatorProtocol.swift in Sources */,
 				1327B0CE27A99E1A00C28CE8 /* MediaCell.swift in Sources */,
