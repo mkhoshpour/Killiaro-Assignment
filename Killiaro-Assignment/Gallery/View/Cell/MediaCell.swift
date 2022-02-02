@@ -12,30 +12,20 @@ class MediaCell: UICollectionViewCell {
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var imageThumbnail: UIImageView!
 
-
+    var index: IndexPath?
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-
-    func configureCellWith(_ item: MediaModel, size: CGSize) {
+    func configureCellWith(_ item: MediaModel, size: CGSize, index: IndexPath) {
         labelName.text = item.getSize()
-        imageThumbnail.image = nil
-        if let thumbnail = item.thumbnail_url, var url = URL(string: thumbnail) {
-            let queryParams = "?w=" + String(Int(size.width)) + "&h=" + String(Int(size.height)) + "&m=md"
-            url = url.appendingPathExtension(queryParams)
-            MediaService.loadImage(url: url) {[weak self] result in
-                guard let self = self else { return }
-                switch result {
-                case .success(let image):
-                    self.imageThumbnail.image = image
-                case .failure(let error):
-                    print(error.localizedDescription)
-                }
-            }
-        }
+        imageThumbnail.image = UIImage(named: "placeholder")
+        self.index = index
+    }
 
+    func setThumbnail(image: UIImage) {
+        self.imageThumbnail.image = image
     }
 }

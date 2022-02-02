@@ -71,4 +71,3 @@ fileprivate extension String {
         return String(self.dropLast(suffix.count))
     }
 }
-

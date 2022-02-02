@@ -22,14 +22,12 @@ struct MediaModel: Codable {
     var thumbnail_url: String?
     var user_id: String?
 
-
     func getSize() -> String {
         if let size = size {
             let fileSizeStr = ByteCountFormatter.string(fromByteCount: size, countStyle: ByteCountFormatter.CountStyle.memory)
             return fileSizeStr
-        }else{
+        } else {
             return "N/A"
         }
     }
 }
-

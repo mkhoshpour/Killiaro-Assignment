@@ -15,8 +15,7 @@ import Kingfisher
  */
 
 typealias MediasCompletionHandler = (Result<[MediaModel], RequestError>) -> Void
-typealias ImageResult = (Result<UIImage, Error>) -> Void
-
+typealias ImageResult = (Result<UIImage, Error>, IndexPath?) -> Void
 
 protocol MediaServiceProtocol {
     func getMedias(completionHandler: @escaping MediasCompletionHandler)
@@ -57,20 +56,18 @@ class MediaService: MediaServiceProtocol {
         }
     }
 
-
-
-    static func loadImage(url: URL, result: @escaping ImageResult) {
+    static func loadImage(url: URL, indexPath: IndexPath? = nil, result: @escaping ImageResult) {
         // KingFisher needs imageView to set image to, but we only need image
 
         KF.url(url)
-            .placeholder(UIImage(named: "foodPlaceholder"))
+            .placeholder(UIImage(named: "placeholder"))
             .loadDiskFileSynchronously()
             .cacheMemoryOnly(false)
             .waitForCache(true)
-            .fade(duration: 0.25)
-            .onSuccess { data in
+            .onSuccess { [indexPath] data in
                 if let image = data.image.imageAsset?.image(with: .current) {
-                    result(.success(image))
+
+                    result(.success(image), indexPath)
                 }
             }
             .onFailure { error in
@@ -78,7 +75,11 @@ class MediaService: MediaServiceProtocol {
             }
             .set(to: UIImageView())
     }
+
+    static func clearImageCache() {
+        ImageCache.default.clearDiskCache {
+            print("cache cleared")
+        }
+        ImageCache.default.clearMemoryCache()
+    }
 }
-
-
-

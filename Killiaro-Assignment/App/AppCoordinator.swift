@@ -13,7 +13,6 @@ final class AppCoordinator: NSObject, Coordinator {
     // ChildCoordinators of AppCoordinator
     var childCoordinators: [Coordinator] = []
 
-
     // MARK: - Variables
     let window: UIWindow?
     var navigationController: UINavigationController
@@ -37,7 +36,7 @@ final class AppCoordinator: NSObject, Coordinator {
     }
 
     func navigateToDetailView(_ media: MediaModel) {
-        let detailViewController = ImageViewController.instantiate(coordinator: self)
+        let detailViewController = ImagePlayerViewController.instantiate(coordinator: self)
         detailViewController.imageViewModel.media = media
         navigationController.pushViewController(detailViewController, animated: true)
     }

@@ -12,7 +12,11 @@ class GalleryViewController: UIViewController, Storyboarded {
     // UI Elements
     @IBOutlet weak var collectionView: UICollectionView!
     var cellHeight = CGFloat(140)
-
+    @IBOutlet var loading: UIActivityIndicatorView! {
+        didSet {
+            loading.hidesWhenStopped = true
+        }
+    }
 
     var medias = [MediaModel]()
 
@@ -20,23 +24,24 @@ class GalleryViewController: UIViewController, Storyboarded {
 
     let galleryViewModel = GalleryViewModel(mediaService: MediaService.shared)
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         setupBindings()
-        // Do any additional setup after loading the view.
+        galleryViewModel.getMedias()
+
     }
 
-    func setupView(){
+    func setupView() {
         self.title = "Gallery"
 
         self.collectionView.registerCell(type: MediaCell.self)
-//        if let flowLayout = collectionView?.collectionViewLayout as? UICollectionViewFlowLayout {
-//            flowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
-//        }
+
+        // add reload button
+        let reloadButton = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refreshData))
+        self.navigationItem.rightBarButtonItem = reloadButton
+
     }
-    
 
     // MARK: - Bindings
     private func setupBindings() {
@@ -44,7 +49,8 @@ class GalleryViewController: UIViewController, Storyboarded {
         // Subscribe to Loading
         galleryViewModel.loading = { [weak self] isLoading in
             guard let self = self else { return }
-//            isLoading ? self.loading.startAnimating() : self.loading.stopAnimating()
+            isLoading ? self.loading.startAnimating() : self.loading.stopAnimating()
+
         }
 
         // Subscribe to apartments
@@ -57,16 +63,17 @@ class GalleryViewController: UIViewController, Storyboarded {
         }
 
         // Subscribe to errors
-        galleryViewModel.errorHandler = { [weak self] error in
+        galleryViewModel.errorHandler = { [weak self] _ in
             guard let self = self else { return }
 //            self.showAlertWith(error, title: "Error", completion: nil)
         }
     }
 
+    @objc func refreshData() {
+        galleryViewModel.refreshMedias()
+    }
+
 }
-
-
-
 
 // MARK: - UICollectionView DataSource
 extension GalleryViewController: UICollectionViewDataSource {
@@ -79,7 +86,19 @@ extension GalleryViewController: UICollectionViewDataSource {
             let media = medias[indexPath.row]
             let width = collectionView.frame.width / 3
             let size = CGSize(width: width, height: cellHeight)
-            cell.configureCellWith(media, size: size)
+            cell.configureCellWith(media, size: size, index: indexPath)
+            galleryViewModel.downloadThumbnail(item: media, size: size, indexPath: indexPath) { result, index  in
+                switch result {
+                case .success( let image):
+                    if let index = index, let cellIndex = cell.index {
+                        if cellIndex.row == index.row {
+                            cell.setThumbnail(image: image)
+                        }
+                    }
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
             return cell
         } else {
             return UICollectionViewCell()
@@ -96,4 +115,11 @@ extension GalleryViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: width, height: cellHeight)
     }
 
+}
+
+// MARK: - UICollectionView Delegate
+extension GalleryViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.coordinator?.navigateToDetailView(medias[indexPath.row])
+    }
 }

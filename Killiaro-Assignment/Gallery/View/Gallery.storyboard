@@ -42,18 +42,29 @@
                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="miC-3b-0vr"/>
                                 </connections>
                             </collectionView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="ifu-4c-stE">
+                                <rect key="frame" x="182" y="423" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Bsp-aV-A28"/>
+                                    <constraint firstAttribute="height" constant="50" id="k2y-zm-uHG"/>
+                                </constraints>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="dSr-PM-ZcT" secondAttribute="bottom" id="383-Ho-fGh"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dSr-PM-ZcT" secondAttribute="trailing" id="3ED-yB-s5r"/>
+                            <constraint firstItem="ifu-4c-stE" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Czp-kV-uVK"/>
                             <constraint firstItem="dSr-PM-ZcT" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="MOT-3T-BPq"/>
+                            <constraint firstItem="ifu-4c-stE" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Xx6-S0-hNh"/>
                             <constraint firstItem="dSr-PM-ZcT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="rwj-Me-9gE"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="dSr-PM-ZcT" id="Px7-Wl-glV"/>
+                        <outlet property="loading" destination="ifu-4c-stE" id="LkL-7z-pkW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
